@@ -14,21 +14,21 @@ print("string") #or Print(variable)  = Prints into console
 #print(variable1+" "+variable2)   = " " adds a space between the variables
 
 #str(var)    = changes the "var"iable into a string to avoid TypeError
-        \__ called as typecasting
----------------------------------------------------------------------------
+#    \__ called as typecasting
+#---------------------------------------------------------------------------
 
 #height = 250.5
 #print("Your height is: "+str(height)+"cm")
 #print(type(height))
 
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
----------------------------------------------------------------------------
+#--------------------------------------------------------------------------
 
 #3 - Multiple Assignment
 #multiple assignment = allows us to assign multiple variables at the same time in ONE line of code
 
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 
 #Use
 #name, age, attractive = "Bro", 21, True
@@ -39,7 +39,7 @@ print("string") #or Print(variable)  = Prints into console
 #attractive = True
 
 ---------------------------------------------------------------------------
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ---------------------------------------------------------------------------
 
 #4
@@ -57,16 +57,16 @@ name.center('x', "y") = length in character count(x) and empty space(y)
 name.swapcase() = changes lowercase to uppercase and vice versa
 name.title() = makes every first letter in every word uppercase (titlecase)
 """
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 """@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"""
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 
 #5 - Type Casting
 #type casting = convert the data type of a value to another data type
 
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 
-x = 1       #int
+"""x = 1       #int
 y = 2.0     #float
 z = "3"     #str
 
@@ -76,22 +76,19 @@ z = int(z)
 
 print(x)
 print(y)
-print(z*3)
+print(z*3)"""#
 
 #RETURNS
 
 #1.0     #x
 #2       #y
-#9       #z
-
----------------------------------------------------------------------------
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
----------------------------------------------------------------------------
+#9      #z*3
+#---------------------------------------------------------------------------
 
 #6 - User Input
 #input()
 
----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 
 #name = input("What is your name?: ")
 #age = int(input("How old are you?: "))     = [must only be a whole number]
@@ -103,8 +100,8 @@ print(z*3)
 #print("You are "+str(age)+" years old") = [returns int(age) into str(age) print]
 #print("You are "+str(height)" cm tall")
 
----------------------------------------------------------------------------
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#---------------------------------------------------------------------------
+""""""@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"""
 ---------------------------------------------------------------------------
 
 #7 - Math Functions
@@ -112,6 +109,8 @@ print(z*3)
 # always use "import math" before using math module codes
 
 ---------------------------------------------------------------------------
+
+
 
 pi = -3.14
 
@@ -128,4 +127,58 @@ y = 2
 z = 3
 
 max(x,y,z)  -> 3   = finds the maximum value between a set of values
-min(x,y,z) -> 1     = finds the minimum value between a set of values
+min(x,y,z) -> 1     = finds the minimum value between a set of values"""
+#9 - IF STATEMENTS 
+# if statement = a block of code that will execute if it's condition is true
+"""if:
+else:
+elif:
+
+= assignment property
+== comparative/comparison property
+---------------------------------------------------------------------------
+
+age = int(input("How old are you?: "))
+
+if age == 100:
+    print("You are a century old!")
+elif age >= 100:
+    print("You are older than a century!")
+elif age >= 18 and age <= 99:
+    print("You are an adult!")
+elif age < 0:
+    print("You haven't been born yet!")
+else:
+    print("You are a child!")
+
+---------------------------------------------------------------------------
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+---------------------------------------------------------------------------
+
+#10 - LOGICAL OPERATORS
+# logical operators (and, or, not) = used to check if two or more conditional statements are true
+#and
+#or
+#not()
+
+---------------------------------------------------------------------------
+
+temp = int(input("What is the temperature outside?: "))
+
+if temp >= 0 and temp <= 30:
+    print("the temperature is good today!")
+    print("go outside!")
+if temp < 0 or temp > 30:
+    print("the tempperature is bad today!")
+    print("stay inside!")
+
+OR
+
+temp = int(input("What is the temperature outside?: "))
+
+if not(temp >= 0 and temp <= 30):
+    print("the tempperature is bad today!")
+    print("stay inside!")
+if not(temp < 0 or temp > 30):
+    print("the temperature is good today!")
+    print("go outside!")"""
