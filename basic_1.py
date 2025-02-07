@@ -182,3 +182,14 @@ if not(temp >= 0 and temp <= 30):
 if not(temp < 0 or temp > 30):
     print("the temperature is good today!")
     print("go outside!")"""
+
+#validate user input exercise
+username=input("enter the username:")
+if len(username)>12:
+    print("put username less than 12")
+elif not username.find(" ")==-1:
+    print("no space plz")
+elif not username.isalpha():
+    print("dont enter digits")
+else:
+    print(f"welcome {username}")
